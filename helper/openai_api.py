@@ -21,10 +21,10 @@ def text_complition(prompt: str) -> dict:
     '''
     try:
         response = openai.Completion.create(
-            model='davinci:ft-personal-2023-04-04-14-03-43',
+            model='davinci:ft-personal-2023-05-14-19-35-08',
             prompt=f'Human: {prompt}\nAI: ',
             temperature=0.9,
-            max_tokens=150,
+            max_tokens=300,
             top_p=1,
             frequency_penalty=0,
             presence_penalty=0.6,
